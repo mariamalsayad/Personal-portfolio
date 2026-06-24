@@ -195,6 +195,8 @@ flex-direction: row ;
 justify-content: center;
 margin: 50px 50px 20px 50px; 
 gap: 150px;
+
+
 }
 
 .cppicon{
@@ -360,123 +362,196 @@ footer {
 }
 
 
-@media (max-width: 600px) {
-
-  nav {
-    padding: 12px 18px;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .navlinks {
-    display: none; /* swap for a hamburger drawer */
-  }
-
+@media screen and (max-width: 1024px) and (min-width: 601px) {
   h1 {
-    font-size: 36px;
-  }
-
-  h2 {
-    font-size: 22px;
-  }
-
-  .intro {
-    margin: 40px 0 10px;
-  }
-
-  .profoliopic {
-    width: 130px;
-    height: 130px;
-  }
-
-  .aboutmyslef {
-    font-size: 16px;
-    margin: 24px auto;
-    padding: 0 0 24px;
+    font-size: 50px;
   }
 
   .title {
-    font-size: 30px !important;
-    margin: 30px 0 0 20px !important;
-  }
-
-  .project {
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-    margin: 0 18px 22px;
-  }
-
-  .square {
-    width: 100%;
-    height: auto;
-    min-height: 140px;
-    border-radius: 18px;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-  }
-
-  .project-title {
-    padding: 10px 0 0;
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .description {
-    margin: 8px 0 16px;
-    text-align: center;
-  }
-
-  .icons {
-    gap: 24px;
-    margin: -20px 0 20px;
-  }
-
-  .skillsicon {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px 0;
-    padding: 0 24px;
-    justify-items: center;
-  }
-
-  .skillsicon i,
-  .cppicon {
-    margin: 0;
-    width: 56px;
-    height: 56px;
+    font-size: 40px;
+    margin-left: 40px;
   }
 
   .button {
-    margin: 20px auto 30px;
-    display: block;
-    padding: 14px 28px;
+    margin-left: 40px;
+    padding: 15px 40px;
+  }
+
+  .icons {
+    gap: 40px;
+  }
+
+  nav {
+    padding: 15px 40px 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navlinks {
     text-align: center;
   }
-
-  .card {
-    width: calc(100% - 32px);
-    margin: 0 16px 14px;
-    height: auto;
-    min-height: 90px;
+  .square {
+    height: 320px;
+    width: 260px;
+    margin: 40px 0;
   }
-
-  .connect-section {
-    padding: 40px 16px;
+  .project-title {
+    font-size: 18px;
+    padding-top: 40px;
   }
-
-  #connect {
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
-  }
-
-  footer {
-    margin: 40px auto 15px;
+  .description {
+    font-size: 14px;
+    font-family: 'Patrick Hand';
   }
 }
+
+
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 70px;
+  }
+
+  .title {
+    font-size: 60px;
+    text-align: left;
+    margin: 50px 0 0 100px;
+  }
+
+  .button {
+    margin-left: 100px;
+    padding: 20px 50px;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 100px 20px;
+  }
+
+  .navlinks {
+    text-align: right;
+  }
+
+  .image-row {
+    flex-wrap: nowrap;
+  }
+
+  .icons {
+    gap: 80px;
+  }
+
+  #skills {
+    gap: 150px;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 600px) {
+  h1, h2 {
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 40px;
+    margin-left: 20px;
+  }
+
+  .button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .icons {
+    gap: 20px;
+    flex-direction: row;  /* Changed from column to row */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #skills {
+    gap: 16px;
+    flex-direction: row;  /* Changed from column to row */
+    flex-wrap: nowrap;
+    justify-content: center;
+
+
+  }
+
+  .image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: row;
+}
+
+  nav {
+    flex-direction: column;
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+   .project {
+    width: 100%;
+    margin-top: 1px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .square {
+    width: 90%;
+    height: 350px ;
+    margin: 10px;
+    padding: 15px 10px 15px 10px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E08E6C;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .project-title {
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.2;
+    margin-top:0;
+   
+  }
+
+  .description {
+    font-size: 14px;
+    text-align: left;
+    font-family: 'Patrick Hand', cursive;
+    line-height: 1.4;
+    word-wrap: break-word;
+    margin-top: 20px;
+    flex-grow:1;
+
+  }
+ .skillsicon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding: 0 20px;
+  }
+
+  .skillsicon i {
+    margin: 20px 0;
+    font-size: 70px;
+  }
+
+  .cppicon {
+    width: 70px;
+    height: 70px;
+    margin: 20px auto;
+  }
+
+
+}
+

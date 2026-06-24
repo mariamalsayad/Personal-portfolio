@@ -108,6 +108,14 @@ background-color: #FFF6EC;
 .icons a:hover{
 opacity: 50%;
 }
+.cppicon{
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+     position: relative;
+    margin-top: 50px;
+    margin-right: 50px;
+}
 
 .title {
   font-size: 60px !important;

@@ -360,137 +360,107 @@ footer {
 }
 
 
-@media screen and (max-width: 768px) {
+@media (max-width: 600px) {
 
-  body {
-    font-size: 14px;
-  }
-
-  
   nav {
-    flex-direction: column;
-    padding: 15px 20px;
-    text-align: center;
-    gap: 10px;
+    padding: 12px 18px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .navlinks {
-    text-align: center;
+    display: none; /* swap for a hamburger drawer */
   }
 
-  .navlinks a {
-    display: inline-block;
-    margin: 8px 8px;
-    font-size: 16px;
-  }
-
-  nav p {
-    font-size: 18px;
-  }
-
-  /* HERO / INTRO */
   h1 {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .intro {
-    margin: 60px 0 10px 0;
+    margin: 40px 0 10px;
+  }
+
+  .profoliopic {
+    width: 130px;
+    height: 130px;
   }
 
   .aboutmyslef {
     font-size: 16px;
-    padding: 0 15px 30px;
+    margin: 24px auto;
+    padding: 0 0 24px;
   }
 
-  .profoliopic {
-    width: 200px;
-    height: 200px;
+  .title {
+    font-size: 30px !important;
+    margin: 30px 0 0 20px !important;
   }
 
-  /* ICON ROW */
-  .icons {
-    gap: 30px;
-    margin: 20px 0;
-  }
-
-  /* TITLES */
-  .title,
-  #skills.title {
-    font-size: 32px !important;
-    margin: 40px 20px 20px 20px !important;
-    text-align: center !important;
-  }
-
-  /* PROJECT SECTION */
   .project {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
+    flex-direction: row;
+    gap: 14px;
+    margin: 0 16px 20px;
+    align-items: flex-start;
   }
 
   .square {
-    width: 90%;
-    height: auto;
+    width: 90px;
+    height: 110px;
+    margin: 0;
+    flex-shrink: 0;
   }
 
   .project-title {
-    text-align: center;
-    padding: 10px;
+    padding: 6px 0 0 0;
+    font-size: 15px;
   }
 
   .description {
-    text-align: center;
-    margin: 10px 20px;
+    margin: 8px 0;
+    font-size: 13px;
   }
 
-
-  .skillsicon {
-    flex-wrap: wrap;
-    gap: 20px;
+  .icons {
+    gap: 24px;
+    margin: -20px 0 20px;
   }
 
-  .skillsicon i {
-    margin: 20px;
-  }
-
+  .skillsicon i,
   .cppicon {
-    width: 60px;
-    height: 60px;
-    margin: 20px;
+    margin: 20px 16px 10px;
+    width: 48px;
+    height: 48px;
   }
 
- 
   .button {
-    margin: 30px auto;
+    margin: 20px auto 30px;
     display: block;
-    padding: 15px 30px;
-  }
-
-  
-  .card {
-    width: 90%;
-    height: auto;
-    flex-direction: column;
+    padding: 14px 28px;
     text-align: center;
-    gap: 10px;
   }
 
-  .text {
-    align-items: center;
+  .card {
+    width: calc(100% - 32px);
+    margin: 0 16px 14px;
+    height: auto;
+    min-height: 90px;
+  }
+
+  .connect-section {
+    padding: 40px 16px;
   }
 
   #connect {
     flex-direction: column;
     align-items: center;
+    gap: 14px;
   }
 
- 
   footer {
-    margin: 60px auto 20px;
-    font-size: 14px;
+    margin: 40px auto 15px;
   }
 }

@@ -401,27 +401,35 @@ footer {
   }
 
   .project {
-    flex-direction: row;
-    gap: 14px;
-    margin: 0 16px 20px;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin: 0 18px 22px;
   }
 
   .square {
-    width: 90px;
-    height: 110px;
+    width: 100%;
+    height: auto;
+    min-height: 140px;
+    border-radius: 18px;
     margin: 0;
-    flex-shrink: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
   }
 
   .project-title {
-    padding: 6px 0 0 0;
-    font-size: 15px;
+    padding: 10px 0 0;
+    font-size: 18px;
+    text-align: center;
   }
 
   .description {
-    margin: 8px 0;
-    font-size: 13px;
+    margin: 8px 0 16px;
+    text-align: center;
   }
 
   .icons {
@@ -429,11 +437,19 @@ footer {
     margin: -20px 0 20px;
   }
 
+  .skillsicon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px 0;
+    padding: 0 24px;
+    justify-items: center;
+  }
+
   .skillsicon i,
   .cppicon {
-    margin: 20px 16px 10px;
-    width: 48px;
-    height: 48px;
+    margin: 0;
+    width: 56px;
+    height: 56px;
   }
 
   .button {
